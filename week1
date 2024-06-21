@@ -1,1 +1,16 @@
-wqwl;e;qlekwlq;ke;e
+2.	Here are some Git and GitHub commands we usually use in software development. Please explain the meanings and use cases of them. 
+1.	git status : 
+2.	git diff 
+3.	git add 
+4.	git reset 
+5.	git commit 
+6.	git log 
+7.	git branch 
+8.	git merge 
+9.	git push [ repo_name ] [ branch_name ] 
+10.	git remote 
+11.	fork 
+12.	(Advanced) git rebase 
+13.	(Advanced) git cherry-pick 
+14.	(Advanced) git reflog 
+15.	(Advanced) git tag 
