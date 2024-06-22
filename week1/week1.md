@@ -6,17 +6,17 @@ Part 1: Git & GitHub
  -    git diff ：顯示繳交檔案之間的差異，或顯示工作目錄和索引之間的變更，通常用在查看工作目錄或索引中我們所做的變更，清楚文件間的不同之處。
  -    git add ：文件內容添加到暫時存放區域，通常使用在將文件的修改或新文件添加到下一次繳交當中。
  -    git reset ：重置當前HEAD到指定狀態，通常為取消暫存區的變更。＊HEAD 當做「目前所在分支」看待＊
- [ ]    git commit ：記錄對repository(儲存庫)的變更，通常是將暫存區中的變更繳交到local repository(本地儲存庫)，生成新的繳交記錄。
- [x]    git log ：顯示繳交的diary(日誌)，通常為查看儲存庫的繳交歷史，包括提交個人資訊、作者、日期和繳交信息。
-    git branch ：列出、創建或刪除分支，通常為管理分支，如查看所有分支、建立新分支、刪除分支等。
-    git merge ：合併兩個或多個開發歷史，通常為將其他的分支的修改合併到現在正在進行的分支。
-    git push [ repo_name ] [ branch_name ] ：更新Remote repository（遠端儲存庫）中的引用和有關的東西，通常為將本地儲存庫的變更送到遠端儲存庫。
-    git remote ：查看遠端儲存庫集合，通常使用在添加、刪除和查看遠端儲存庫。
-    fork ：很特別的沒有git在前面，是將儲存庫複製到你的GitHub帳戶，通常是在自己個人的帳戶中創建其他儲存庫的副本，進行開發製作。
-    (Advanced) git rebase ：重新應用繳交在另一基礎之上，感覺上是整合變更並保持繳交歷史的一致，通常用於清理繳交歷史。
-    (Advanced) git cherry-pick ：使用在特定提交的變更，通常會從一個分支中選擇特定繳交並應用到其他分支。
-    (Advanced) git reflog ：為記錄分支和其他引用更新的時間，通常是查看所有HEAD的變動，包括撤銷操作的記錄。
-    (Advanced) git tag ：為歷史紀錄中的特定點的創建、列出、刪除或驗證，通常為特定繳交創建標籤，用於標記版本發布點。
+ -    git commit ：記錄對repository(儲存庫)的變更，通常是將暫存區中的變更繳交到local repository(本地儲存庫)，生成新的繳交記錄。
+ -   git log ：顯示繳交的diary(日誌)，通常為查看儲存庫的繳交歷史，包括提交個人資訊、作者、日期和繳交信息。
+ -    git branch ：列出、創建或刪除分支，通常為管理分支，如查看所有分支、建立新分支、刪除分支等。
+ -    git merge ：合併兩個或多個開發歷史，通常為將其他的分支的修改合併到現在正在進行的分支。
+ -    git push [ repo_name ] [ branch_name ] ：更新Remote repository（遠端儲存庫）中的引用和有關的東西，通常為將本地儲存庫的變更送到遠端儲存庫。
+ -    git remote ：查看遠端儲存庫集合，通常使用在添加、刪除和查看遠端儲存庫。
+ -    fork ：很特別的沒有git在前面，是將儲存庫複製到你的GitHub帳戶，通常是在自己個人的帳戶中創建其他儲存庫的副本，進行開發製作。
+ -    (Advanced) git rebase ：重新應用繳交在另一基礎之上，感覺上是整合變更並保持繳交歷史的一致，通常用於清理繳交歷史。
+ -    (Advanced) git cherry-pick ：使用在特定提交的變更，通常會從一個分支中選擇特定繳交並應用到其他分支。
+ -    (Advanced) git reflog ：為記錄分支和其他引用更新的時間，通常是查看所有HEAD的變動，包括撤銷操作的記錄。
+ -    (Advanced) git tag ：為歷史紀錄中的特定點的創建、列出、刪除或驗證，通常為特定繳交創建標籤，用於標記版本發布點。
 
 3. Please describe how to establish a GitHub repo and how to upload the local projects to GitHub. Try to explain your answers with as much detail as possible.
 使用 mkdir Remote-Assignments 創建一個名為 Remote-Assignments 的資料夾，然後進入該資料夾 cd Remote-Assignments。在資料夾內，使用 mkdir week1 創建一個名為 week1 的子資料夾。接著，初始化Git儲存庫，輸入 git init。再來將此週的作業文件複製到 week1 資料夾中，例如使用 cp /path/to/your/assignment/file week1/。然後，使用 git add . 添加所有文件到Git暫存區。提交這些文件並添加提交信息，輸入 git commit -m "Add week 1 assignments"。
@@ -26,9 +26,9 @@ Part 2: Basic
 1.    Please explain the difference between let and var.
 都是宣告變數的關鍵字。var 是表示變數可能會改變，let 則是不會改變。
 以下是我在網路上找到的舉例哈
-    Var表示值可以改變
+ -    Var表示值可以改變
 var appearance: String這裡使用var宣告代表此變數的值(appearance)可能會變動（就像男大十八變一樣，帥氣程度也會改變）
-    let表示值一旦設置就不能改變。
+ -    let表示值一旦設置就不能改變。
 let gender: String用 let 宣告表示性別（gender）不會改變
 資料來源：https://reurl.cc/dnjyM8
 2.    In Swift, we usually define a variable through the syntax as below: 
@@ -51,10 +51,10 @@ let average: Double = Double(x + y) / 2.0
 let remainder = 10 % 3
 6.    Swift is a very powerful language that can infer the data type for you ( Type Inference ) while we still need to know the basics well. Please change the following codes into the ones with the type annotation. 
 Ex: .var x = 10.=>.var x: Int = 10. 
-    var flag: Bool = true  //Bool 布林值
-    var inputString: String = "Hello world." //字串
-    let bitsInByte: Int = 8 //整數
-    let averageScore: Double = 86.8 //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
+ -    var flag: Bool = true  //Bool 布林值
+ -    var inputString: String = "Hello world." //字串
+ -    let bitsInByte: Int = 8 //整數
+ -    let averageScore: Double = 86.8 //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
 7.    What is Type Inference(類型推斷) in Swift? 
 類型推斷是Swift編譯器自動推斷變數、常數或表達式的類型的能力。這使得我們在編寫程式碼時不必明確聲明所有類型，從而簡化了程式碼。
 8.    What is the issue about this piece of code? 
