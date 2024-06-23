@@ -111,7 +111,8 @@ Arrays are dangerous in Swift. If you access the array with an index which is ou
     
  
 6.    Now I want to know who is at index 5 in the myFriends array, try to find the answer for me. Please explain how you get the answer and why the answer is it. 
-會跑出error因為沒有index 5的內容，因為0代表第一位置
+    
+    會跑出error因為沒有index 5的內容，因為0代表第一位置
 7.    How to get the first element in an array? 
     
     let firstFriend = myFriends.first
@@ -145,6 +146,7 @@ Arrays are dangerous in Swift. If you access the array with an index which is ou
 >Part 4: Control Flow
 1. Here is an array:
 let lottoNumbers = [10, 9, 8, 7, 6, 5]
+
 Please use For-In loop and Range to print the last three members in the
 .lottoNumbers. array.
     
