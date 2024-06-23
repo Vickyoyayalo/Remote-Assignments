@@ -24,20 +24,21 @@ Remote Learning Assignment - Week 1
 >Part 2: Basic 
 1.    Please explain the difference between let and var.
     
-    都是宣告變數的關鍵字。var 是表示變數可能會改變，let 則是不會改變。
-    以下是我在網路上找到的舉例哈
-     -    Var表示值可以改變
-    var appearance: String這裡使用var宣告代表此變數的值(appearance)可能會變動（就像男大十八變一樣，帥氣程度也會改變）
-     -    let表示值一旦設置就不能改變。
-    let gender: String用 let 宣告表示性別（gender）不會改變
-    資料來源：https://reurl.cc/dnjyM8
+        都是宣告變數的關鍵字。var 是表示變數可能會改變，let 則是不會改變。
+        以下是我在網路上找到的舉例哈
+        Var表示值可以改變
+        var appearance: String這裡使用var宣告代表此變數的值(appearance)可能會變動（就像男大十八變一樣，帥氣程度也會改變）
+        let表示值一旦設置就不能改變。
+        let gender: String用 let 宣告表示性別（gender）不會改變
+        資料來源：https://reurl.cc/dnjyM8
 2.    In Swift, we usually define a variable through the syntax as below: 
 .var x: Int = 10.
 We use the formula: 2 * radius * pi to calculate the circumference. Now, please define a variable pi and assign a value to it. You can refer to the syntax above while thinking about using var or let and which data type it should be. 
     
     我認為應該要使用let 因為若pi是圓周率，是不能改變的，使用let
-let pi: Double = 3.14159
-3.    Declare two constants x and y of type Int then assign any value to them. After that, please calculate the average of x and y and store the result in a constant named average.
+    let pi: Double = 3.14159
+    
+3.  Declare two constants x and y of type Int then assign any value to them. After that, please calculate the average of x and y and store the result in a constant named average.
     
     首先先宣告x和y兩變數，再去指定其資料類型
     let x: Int = 10
@@ -56,10 +57,11 @@ let pi: Double = 3.14159
 6.    Swift is a very powerful language that can infer the data type for you ( Type Inference ) while we still need to know the basics well. Please change the following codes into the ones with the type annotation. 
     
     Ex: .var x = 10.=>.var x: Int = 10. 
-     -    var flag: Bool = true  //Bool 布林值
-     -    var inputString: String = "Hello world." //字串
-     -    let bitsInByte: Int = 8 //整數
-     -    let averageScore: Double = 86.8 //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
+        var flag: Bool = true  //Bool 布林值
+        var inputString: String = "Hello world." //字串
+        let bitsInByte: Int = 8 //整數
+        let averageScore: Double = 86.8
+        //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
 7.    What is Type Inference(類型推斷) in Swift? 類型推斷是Swift編譯器自動推斷變數、常數或表達式的類型的能力。這使得我們在編寫程式碼時不必明確聲明所有類型，從而簡化了程式碼。
 8.    What is the issue about this piece of code? 
     
@@ -150,10 +152,10 @@ let lottoNumbers = [10, 9, 8, 7, 6, 5]
 Please use For-In loop and Range to print the last three members in the
 .lottoNumbers. array.
     
-    let lottoNumbers = [10, 9, 8, 7, 6, 5]
-    for number in lottoNumbers[lottoNumbers.count-3..<lottoNumbers.count] {
-        print(number)
-    }
+        let lottoNumbers = [10, 9, 8, 7, 6, 5]
+        for number in lottoNumbers[lottoNumbers.count-3..<lottoNumbers.count] {
+            print(number)
+        }
 
 2. Please use a for-in loop to print the results as the images listed below respectively(through .lottoNumbers.):
 
@@ -239,13 +241,13 @@ func payment( ) -> Double { }
 
 2. Please declare a function named multiply with two arguments a and b . This function won’t return any value and will only print out the result of a * b . Be noticed that we want to give the argument b a default value of 10.
 
-    func multiply(a: Int, b: Int = 10) {
-        print(a * b)
-    }
+        func multiply(a: Int, b: Int = 10) {
+            print(a * b)
+        }
     
 3. What’s the difference between argument label and parameter name in a function?
     
-    我們在 function { } 裡存取的參數名是內部名(parameter name)，呼叫 function 時在 ( ) 裡包含的參數名是外部名(argument label)。 //寫程式時寫得愈像英文句子愈好
+        我們在 function { } 裡存取的參數名是內部名(parameter name)，呼叫 function 時在 ( ) 裡包含的參數名是外部名(argument label)。 //寫程式時寫得愈像英文句子愈好
 
 4. Please declare a function named greeting with person as an argument label and name as a parameter name. This greeting function will return a String. For example, if you call the function greet like this:It will return the string: “Hello, Luke”.
     greet(person: "Luke")
