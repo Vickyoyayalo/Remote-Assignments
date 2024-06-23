@@ -192,8 +192,7 @@ Please use For-In loop and Range to print the last three members in the
 
 6. Declare a variable isRaining to record the weather. Please write a statement that if the weather is raining, print “It’s raining, I don’t want to work today.”, otherwise print “Although it’s sunny, I still don’t want to work today.”
 
-      var isRaining = true
-      
+        var isRaining = true
         if isRaining {
             print("It's raining, I don't want to work today.")
             } else {
@@ -201,9 +200,8 @@ Please use For-In loop and Range to print the last three members in the
         }
         
       var isRaining = false
-      
       if isRaining {
-        print("It's raining, I don't want to work today.")
+            print("It's raining, I don't want to work today.")
             } else {
             print("Although it's sunny, I still don't want to work today.")
         }
