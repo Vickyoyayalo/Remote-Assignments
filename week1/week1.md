@@ -68,6 +68,7 @@ We use the formula: 2 * radius * pi to calculate the circumference. Now, please 
 7.    What is Type Inference(類型推斷) in Swift? 
 
         類型推斷是Swift編譯器自動推斷變數、常數或表達式的類型的能力。這使得我們在編寫程式碼時不必明確聲明所有類型，從而簡化了程式碼。
+        
 8.    What is the issue about this piece of code? 
     
     var 已經在先前賦予phoneNumber 一個值（Int），就不行在後面又同時賦予字串（String）
