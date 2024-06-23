@@ -49,8 +49,9 @@ We use the formula: 2 * radius * pi to calculate the circumference. Now, please 
 ● Please solve this problem so that we can put the average in the record system. 
 ● Please explain the difference between ( 10 / 3 ) and ( 10.0 / 3.0 ). 
    
-        (10 / 3) 是整數除法，結果為整數。
-        (10.0 / 3.0) 是浮點數除法，結果為小數。
+    (10 / 3) 是整數除法，結果為整數。
+    (10.0 / 3.0) 是浮點數除法，結果為小數。
+    
 5.    Declare two constants that values are 10 and 3 each, then please calculate the remainder and save the result in a constant named remainder. 
     
         let remainder = 10 % 3
