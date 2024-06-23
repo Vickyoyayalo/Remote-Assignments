@@ -68,6 +68,7 @@ You should know how to declare an Array in Swift, and also how to add, remove, i
 Arrays are dangerous in Swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully. 
 Arrays are dangerous in Swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully. 
 1.    Please initialize an empty array with String data type and assign it to a variable named myFriends.
+    
     var myFriends: Array<String> = [ ]
     var myFriends: [String] = [ ]   
     var myFriends = Array<String>( )
