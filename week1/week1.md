@@ -1,6 +1,6 @@
-## 軟體人才培訓學院 / iOS Class
-Remote Learning Assignment - Week 1
-Part 1: Git & GitHub 
+# 軟體人才培訓學院 / iOS Class
+##Remote Learning Assignment - Week 1
+###Part 1: Git & GitHub 
 2. Here are some Git and GitHub commands we usually use in software development. Please explain the meanings and use cases of them. 
  -    git status : 顯示工作目錄的狀態，通常會用在檢查現階段的branch(分支)、尚未暫存的修改、已暫存但還沒提交的變更等等。
  -    git diff ：顯示繳交檔案之間的差異，或顯示工作目錄和索引之間的變更，通常用在查看工作目錄或索引中我們所做的變更，清楚文件間的不同之處。
@@ -22,7 +22,7 @@ Part 1: Git & GitHub
 使用 mkdir Remote-Assignments 創建一個名為 Remote-Assignments 的資料夾，然後進入該資料夾 cd Remote-Assignments。在資料夾內，使用 mkdir week1 創建一個名為 week1 的子資料夾。接著，初始化Git儲存庫，輸入 git init。再來將此週的作業文件複製到 week1 資料夾中，例如使用 cp /path/to/your/assignment/file week1/。然後，使用 git add . 添加所有文件到Git暫存區。提交這些文件並添加提交信息，輸入 git commit -m "Add week 1 assignments"。
 
 再來將本地儲存庫與GitHub遠端儲存庫連接，使用 git remote add origin https://github.com/ Vickyoyayalo/Remote-Assignments.git 添加遠端儲存庫，並輸入 git branch -M main 設置主分支。最後使用 git push -u origin main 將文件推送到GitHub遠端儲存庫。
-Part 2: Basic 
+###Part 2: Basic 
 1.    Please explain the difference between let and var.
 都是宣告變數的關鍵字。var 是表示變數可能會改變，let 則是不會改變。
 以下是我在網路上找到的舉例哈
@@ -65,7 +65,7 @@ salary += 28000
 10.    You should notice that ‘=’ has a different meaning in programming. In the real world, ‘=’ means equal while in programming, ‘=’ means assign. You simply put the right-hand side data into the left-hand side variable or constant. Now please write down the Equality operator in Swift. 
 let equalityOperator = ( a == b )  // == 雙等號 等於 Equality operator
 
-Part 3: Collection 
+###Part 3: Collection 
 You should know how to declare an Array in Swift, and also how to add, remove, insert, read an object in an array. You should be familiar with the following syntax: append, .insert, remove . 
 Arrays are dangerous in Swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully. 
 Arrays are dangerous in Swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully. 
