@@ -68,49 +68,49 @@ You should know how to declare an Array in Swift, and also how to add, remove, i
 Arrays are dangerous in Swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully. 
 Arrays are dangerous in Swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully. 
 1.    Please initialize an empty array with String data type and assign it to a variable named myFriends.
-var myFriends: Array<String> = [ ]
-var myFriends: [String] = [ ]   
-var myFriends = Array<String>( )
-var myFriends= [String]( )
+    var myFriends: Array<String> = [ ]
+    var myFriends: [String] = [ ]   
+    var myFriends = Array<String>( )
+    var myFriends= [String]( )
 // Array 一連串的同類型<Element>資料，在array裡面的index都會是正整數
 2.    According to Q1, now I have three friends, ‘Ian’, ‘Bomi’, and ‘Kevin’. Please help me to add their name into myFriends array at once. 
-var myFriends= [String]( )
-myFriends.append(contentsOf: ["Ian", "Bomi", "Kevin"])  
-// .append（Element） 增補，沒特定位置；.insert（Element, at: Int）插入在特定的位置
+    var myFriends= [String]( )
+    myFriends.append(contentsOf: ["Ian", "Bomi", "Kevin"])  
+    // .append（Element） 增補，沒特定位置；.insert（Element, at: Int）插入在特定的位置
 3.    Oops, I forgot to add ‘Michael’ who is one of my best friends222, please help me to add Michael to the end of myFriends array. 
 myFriends.append("Michael")
 4.    Because I usually hang out with Kevin, please move Kevin to the beginning of the myFriends array. 
 
-if let index = myFriends.firstIndex(of: "Kevin") {
-    let kevin = myFriends.remove(at: index)
-    myFriends.insert(kevin, at: 0)
-}
-print(myFriends)
+    if let index = myFriends.firstIndex(of: "Kevin") {
+        let kevin = myFriends.remove(at: index)
+        myFriends.insert(kevin, at: 0)
+    }
+    print(myFriends)
 
     //0代表第一個順位，補充.firstIndex(of: "Element") 的直須要是equatable
 5.    Use for...in to print all the friends in myFriends array. 
-for friend in myFriends {
-    print(friend)
-}
-//這樣print出來會是一列一列的顯示名字
+    for friend in myFriends {
+        print(friend)
+    }
+    //這樣print出來會是一列一列的顯示名字
  
 6.    Now I want to know who is at index 5 in the myFriends array, try to find the answer for me. Please explain how you get the answer and why the answer is it. 
 會跑出error因為沒有index 5的內容，因為0代表第一位置
 7.    How to get the first element in an array? 
-let firstFriend = myFriends.first
+    let firstFriend = myFriends.first
 8.    How to get the last element in an array? 
-let lastFriend = myFriends.last
+    let lastFriend = myFriends.last
 9.    Please initialize a with keys of type String, value of type Int, and assign it to a variable named. 
-var myCountryNumber = [String:Int]()
-var myCountryNumber: [String: Int] = [:]
+    var myCountryNumber = [String:Int]()
+    var myCountryNumber: [String: Int] = [:]
 10.    Please add three values 1, 44, 81 to myCountryNumber for keys ‘US’, ‘GB’, ‘JP’ respectively. 
-myCountryNumber["US"] = 1
-myCountryNumber["GB"] = 44
-myCountryNumber["JP"] = 81
+    myCountryNumber["US"] = 1
+    myCountryNumber["GB"] = 44
+    myCountryNumber["JP"] = 81
 11.    Change the value of ‘GB’ from 44 to 0. 
-myCountryNumber["GB"] = 0
+    myCountryNumber["GB"] = 0
 12.    How to declare an empty dictionary? 
-Var myCountryNumber: [String: Int] = [:]
+    Var myCountryNumber: [String: Int] = [:]
 13.    How to remove a key-value pair in a dictionary? 
-myCountryNumber.removeValue(forKey: "GB")
+    myCountryNumber.removeValue(forKey: "GB")
 
