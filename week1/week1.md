@@ -157,24 +157,24 @@ let lottoNumbers = [10, 9, 8, 7, 6, 5]
 Please use For-In loop and Range to print the last three members in the
 .lottoNumbers. array.
     
-let lottoNumbers = [10, 9, 8, 7, 6, 5]
-for number in lottoNumbers[lottoNumbers.count-3..<lottoNumbers.count] {
-    print(number)
-}
+        let lottoNumbers = [10, 9, 8, 7, 6, 5]
+        for number in lottoNumbers[lottoNumbers.count-3..<lottoNumbers.count] {
+            print(number)
+        }
 
 2. Please use a for-in loop to print the results as the images listed below respectively(through .lottoNumbers.):
 
-//檢查有沒有明確範圍，沒有寫break他就會重複執行直到條件不成立
-let sortedNumbers = lottoNumbers.sorted()
-for number in sortedNumbers {
-    print(number)
-}
+        //檢查有沒有明確範圍，沒有寫break他就會重複執行直到條件不成立
+        let sortedNumbers = lottoNumbers.sorted()
+        for number in sortedNumbers {
+            print(number)
+        }
         
-for number in lottoNumbers {
-if number % 2 == 0{
-    print(number)
-    }
-}
+        for number in lottoNumbers {
+        if number % 2 == 0{
+            print(number)
+            }
+        }
 3. Please use a while loop to solve the Q2.
 
         var index = 0
