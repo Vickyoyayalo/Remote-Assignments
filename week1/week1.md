@@ -198,13 +198,6 @@ Please use For-In loop and Range to print the last three members in the
             } else {
             print("Although it's sunny, I still don't want to work today.")
         }
-        
-      var isRaining = false
-      if isRaining {
-            print("It's raining, I don't want to work today.")
-            } else {
-            print("Although it's sunny, I still don't want to work today.")
-        }
 
 7. In a company, we might use numbers to represent job levels. Let’s make an example. We use 1 for the Member, 2 for Team Leader, 3 for Manager, and 4 for Director. Now, declare a variable named jobLevel and assign a number to it. If the jobLevel number is in our list, print the relative job title name; if not, just print “We don't have this job”. Please use the if-else statement and the switch statement to complete this requirement separately.
     
