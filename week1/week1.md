@@ -57,8 +57,9 @@ Ex: .var x = 10.=>.var x: Int = 10.
 8.    What is the issue about this piece of code? 
     var 已經在先前賦予phoneNumber 一個值（Int），就不行在後面又同時賦予字串（String）
 9.    Compond assignment operators are very useful when programming. Please declare a variable salary with initial value 22000, and use unary plus operator adding 28000 to salary, so it will be 50000 after this process. 
-let salary: Int = 22000
-salary += 28000 
+    
+    let salary: Int = 22000
+    salary += 28000 
 10.    You should notice that ‘=’ has a different meaning in programming. In the real world, ‘=’ means equal while in programming, ‘=’ means assign. You simply put the right-hand side data into the left-hand side variable or constant. Now please write down the Equality operator in Swift. 
 let equalityOperator = ( a == b )  // == 雙等號 等於 Equality operator
 
@@ -144,39 +145,107 @@ Please use For-In loop and Range to print the last three members in the
     }
 
 2. Please use a for-in loop to print the results as the images listed below respectively(through .lottoNumbers.):
-    
-    for number in lottoNumbers {
-        print(number)
-    }
+
+        //檢查有沒有明確範圍，沒有寫break他就會重複執行直到條件不成立
+    -   let sortedNumbers = lottoNumbers.sorted()
+        for number in sortedNumbers {
+            print(number)
+        }
+        
+    -  for number in lottoNumbers {
+        if number % 2 == 0{
+            print(number)
+            }
+        }
 3. Please use a while loop to solve the Q2.
 
+    //當while後面的條件成立（true）時會不斷重複，所以要在後面寫個if如果是不成立時（false）
+    var index = 0
+    while index < lottoNumbers.count {
+        print(lottoNumbers[index])
+        index += 1
+    }
 
 4. Please use a repeat-while loop to solve Q2.
-
+   
+    //repeat為先進行，後檢查，適合用於無論如何都需要先進行的情況
+    var index = 0
+    repeat {
+        print(lottoNumbers[index])
+        index += 1
+    } while index < lottoNumbers.count
 
 5. What are the differences between while and repeat-while?
-
+ - 當while後面的條件成立（true）時會不斷重複，所以要在後面寫個if如果是不成立時（false）
+ - repeat-while 為先進行，後檢查，適合用於無論如何都需要先進行的情況
 
 6. Declare a variable isRaining to record the weather. Please write a statement that if the weather is raining, print “It’s raining, I don’t want to work today.”, otherwise print “Although it’s sunny, I still don’t want to work today.”
 
+    -   var isRaining = true
+        if isRaining {
+            print("It's raining, I don't want to work today.")
+        } else {
+            print("Although it's sunny, I still don't want to work today.")
+        }
+        
+    -   var isRaining = false
+        if isRaining {
+            print("It's raining, I don't want to work today.")
+        } else {
+            print("Although it's sunny, I still don't want to work today.")
+        }
 
 7. In a company, we might use numbers to represent job levels. Let’s make an example. We use 1 for the Member, 2 for Team Leader, 3 for Manager, and 4 for Director. Now, declare a variable named jobLevel and assign a number to it. If the jobLevel number is in our list, print the relative job title name; if not, just print “We don't have this job”. Please use the if-else statement and the switch statement to complete this requirement separately.
-
+    
+    -   if-else statement //if檢查是否為true
+        var jobLevels = 2
+        if jobLevel == 1 {
+            print("Member")
+        } else if jobLevel == 2 {
+            print("Team Leader")
+        } else if jobLevel == 3 {
+            print("Manager")
+        } else if jobLevel == 4 {
+            print("Director")
+        } else {
+            print("We don't have this job")
+        }
+        
+    -   switch statement //檢查是否一樣
+        switch jobLevel {
+        case 1:
+            print("Member")
+        case 2:
+            print("Team Leader")
+        case 3:
+            print("Manager")
+        case 4:
+            print("Director")
+        default:
+            print("We don't have this job")
+        }
 
 >Part 5: Function
 1. What are the return types in the following statements?
-func birthday( ) -> String {
-}
+func birthday( ) -> String { }
 func payment( ) -> Double { }
 
+    - birthday() -> String
+    - payment() -> Double
 
 2. Please declare a function named multiply with two arguments a and b . This function won’t return any value and will only print out the result of a * b . Be noticed that we want to give the argument b a default value of 10.
 
-
+    func multiply(a: Int, b: Int = 10) {
+        print(a * b)
+    }
+    
 3. What’s the difference between argument label and parameter name in a function?
-
+    我們在 function { } 裡存取的參數名是內部名(parameter name)，呼叫 function 時在 ( ) 裡包含的參數名是外部名(argument label)。 //寫程式時寫得愈像英文句子愈好
 
 4. Please declare a function named greeting with person as an argument label and name as a parameter name. This greeting function will return a String. For example, if you call the function greet like this:It will return the string: “Hello, Luke”.
-greet(person: "Luke")
- It will return the string: “Hello, Luke”.
+    greet(person: "Luke")
+    It will return the string: “Hello, Luke”.
 
+        func greeting(person name: String) -> String {
+            return "Hello, \(name)"
+        }
