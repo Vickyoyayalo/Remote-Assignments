@@ -1,5 +1,5 @@
 # 軟體人才培訓學院 / iOS Class
-##Remote Learning Assignment - Week 1
+##Remote Learning Assignment - Week 1##
 ###Part 1: Git & GitHub 
 2. Here are some Git and GitHub commands we usually use in software development. Please explain the meanings and use cases of them. 
  -    git status : 顯示工作目錄的狀態，通常會用在檢查現階段的branch(分支)、尚未暫存的修改、已暫存但還沒提交的變更等等。
