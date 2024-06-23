@@ -19,9 +19,7 @@ Remote Learning Assignment - Week 1
  -    (Advanced) git tag ：為歷史紀錄中的特定點的創建、列出、刪除或驗證，通常為特定繳交創建標籤，用於標記版本發布點。
 
 3. Please describe how to establish a GitHub repo and how to upload the local projects to GitHub. Try to explain your answers with as much detail as possible.
-使用 mkdir Remote-Assignments 創建一個名為 Remote-Assignments 的資料夾，然後進入該資料夾 cd Remote-Assignments。在資料夾內，使用 mkdir week1 創建一個名為 week1 的子資料夾。接著，初始化Git儲存庫，輸入 git init。再來將此週的作業文件複製到 week1 資料夾中，例如使用 cp /path/to/your/assignment/file week1/。然後，使用 git add . 添加所有文件到Git暫存區。提交這些文件並添加提交信息，輸入 git commit -m "Add week 1 assignments"。
-
-再來將本地儲存庫與GitHub遠端儲存庫連接，使用 git remote add origin https://github.com/ Vickyoyayalo/Remote-Assignments.git 添加遠端儲存庫，並輸入 git branch -M main 設置主分支。最後使用 git push -u origin main 將文件推送到GitHub遠端儲存庫。
+    使用 mkdir Remote-Assignments 創建一個名為 Remote-Assignments 的資料夾，然後進入該資料夾 cd Remote-Assignments。在資料夾內，使用 mkdir week1 創建一個名為 week1 的子資料夾。接著，初始化Git儲存庫，輸入 git init。再來將此週的作業文件複製到 week1 資料夾中，例如使用 cp /path/to/your/assignment/file week1/。然後，使用 git add . 添加所有文件到Git暫存區。提交這些文件並添加提交信息，輸入 git commit -m "Add week 1 assignments"。再來將本地儲存庫與GitHub遠端儲存庫連接，使用 git remote add origin https://github.com/ Vickyoyayalo/Remote-Assignments.git 添加遠端儲存庫，並輸入 git branch -M main 設置主分支。最後使用 git push -u origin main 將文件推送到GitHub遠端儲存庫。
 >Part 2: Basic 
 1.    Please explain the difference between let and var.
 都是宣告變數的關鍵字。var 是表示變數可能會改變，let 則是不會改變。
@@ -55,10 +53,9 @@ Ex: .var x = 10.=>.var x: Int = 10.
  -    var inputString: String = "Hello world." //字串
  -    let bitsInByte: Int = 8 //整數
  -    let averageScore: Double = 86.8 //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
-7.    What is Type Inference(類型推斷) in Swift? 
-類型推斷是Swift編譯器自動推斷變數、常數或表達式的類型的能力。這使得我們在編寫程式碼時不必明確聲明所有類型，從而簡化了程式碼。
+7.    What is Type Inference(類型推斷) in Swift? 類型推斷是Swift編譯器自動推斷變數、常數或表達式的類型的能力。這使得我們在編寫程式碼時不必明確聲明所有類型，從而簡化了程式碼。
 8.    What is the issue about this piece of code? 
-var 已經在先前賦予phoneNumber 一個值（Int），就不行在後面又同時賦予字串（String）
+    var 已經在先前賦予phoneNumber 一個值（Int），就不行在後面又同時賦予字串（String）
 9.    Compond assignment operators are very useful when programming. Please declare a variable salary with initial value 22000, and use unary plus operator adding 28000 to salary, so it will be 50000 after this process. 
 let salary: Int = 22000
 salary += 28000 
@@ -83,13 +80,14 @@ myFriends.append(contentsOf: ["Ian", "Bomi", "Kevin"])
 3.    Oops, I forgot to add ‘Michael’ who is one of my best friends222, please help me to add Michael to the end of myFriends array. 
 myFriends.append("Michael")
 4.    Because I usually hang out with Kevin, please move Kevin to the beginning of the myFriends array. 
+
 if let index = myFriends.firstIndex(of: "Kevin") {
     let kevin = myFriends.remove(at: index)
     myFriends.insert(kevin, at: 0)
 }
 print(myFriends)
- 
-//0代表第一個順位，補充.firstIndex(of: "Element") 的直須要是equatable
+
+    //0代表第一個順位，補充.firstIndex(of: "Element") 的直須要是equatable
 5.    Use for...in to print all the friends in myFriends array. 
 for friend in myFriends {
     print(friend)
@@ -106,8 +104,13 @@ let lastFriend = myFriends.last
 var myCountryNumber = [String:Int]()
 var myCountryNumber: [String: Int] = [:]
 10.    Please add three values 1, 44, 81 to myCountryNumber for keys ‘US’, ‘GB’, ‘JP’ respectively. 
-
+myCountryNumber["US"] = 1
+myCountryNumber["GB"] = 44
+myCountryNumber["JP"] = 81
 11.    Change the value of ‘GB’ from 44 to 0. 
+myCountryNumber["GB"] = 0
 12.    How to declare an empty dictionary? 
+Var myCountryNumber: [String: Int] = [:]
 13.    How to remove a key-value pair in a dictionary? 
+myCountryNumber.removeValue(forKey: "GB")
 
