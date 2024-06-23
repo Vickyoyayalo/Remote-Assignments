@@ -92,30 +92,42 @@ Arrays are dangerous in Swift. If you access the array with an index which is ou
 
     //0代表第一個順位，補充.firstIndex(of: "Element") 的直須要是equatable
 5.    Use for...in to print all the friends in myFriends array. 
+    
     for friend in myFriends {
         print(friend)
     }
     //這樣print出來會是一列一列的顯示名字
+    
  
 6.    Now I want to know who is at index 5 in the myFriends array, try to find the answer for me. Please explain how you get the answer and why the answer is it. 
 會跑出error因為沒有index 5的內容，因為0代表第一位置
 7.    How to get the first element in an array? 
+    
     let firstFriend = myFriends.first
+    
 8.    How to get the last element in an array? 
+    
     let lastFriend = myFriends.last
+    
 9.    Please initialize a with keys of type String, value of type Int, and assign it to a variable named. 
     
     var myCountryNumber = [String:Int]()
     var myCountryNumber: [String: Int] = [:]
     
 10.    Please add three values 1, 44, 81 to myCountryNumber for keys ‘US’, ‘GB’, ‘JP’ respectively. 
+    
     myCountryNumber["US"] = 1
     myCountryNumber["GB"] = 44
     myCountryNumber["JP"] = 81
+    
 11.    Change the value of ‘GB’ from 44 to 0. 
+    
     myCountryNumber["GB"] = 0
+    
 12.    How to declare an empty dictionary? 
+    
     Var myCountryNumber: [String: Int] = [:]
 13.    How to remove a key-value pair in a dictionary? 
-    myCountryNumber.removeValue(forKey: "GB")
+   
+    myCountryNumber.removeValue(forKey: "US")
 
