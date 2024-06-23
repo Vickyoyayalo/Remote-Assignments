@@ -20,49 +20,51 @@ Remote Learning Assignment - Week 1
 
 3. Please describe how to establish a GitHub repo and how to upload the local projects to GitHub. Try to explain your answers with as much detail as possible.
     
-    使用 mkdir Remote-Assignments 創建一個名為 Remote-Assignments 的資料夾，然後進入該資料夾 cd Remote-Assignments。在資料夾內，使用 mkdir week1 創建一個名為 week1 的子資料夾。接著，初始化Git儲存庫，輸入 git init。再來將此週的作業文件複製到 week1 資料夾中，例如使用 cp /path/to/your/assignment/file week1/。然後，使用 git add . 添加所有文件到Git暫存區。提交這些文件並添加提交信息，輸入 git commit -m "Add week 1 assignments"。再來將本地儲存庫與GitHub遠端儲存庫連接，使用 git remote add origin https://github.com/ Vickyoyayalo/Remote-Assignments.git 添加遠端儲存庫，並輸入 git branch -M main 設置主分支。最後使用 git push -u origin main 將文件推送到GitHub遠端儲存庫。
+        使用 mkdir Remote-Assignments 創建一個名為 Remote-Assignments 的資料夾，然後進入該資料夾 cd Remote-Assignments。在資料夾內，使用 mkdir week1 創建一個名為 week1 的子資料夾。接著，初始化Git儲存庫，輸入 git init。再來將此週的作業文件複製到 week1 資料夾中，例如使用 cp /path/to/your/assignment/file week1/。然後，使用 git add . 添加所有文件到Git暫存區。提交這些文件並添加提交信息，輸入 git commit -m "Add week 1 assignments"。再來將本地儲存庫與GitHub遠端儲存庫連接，使用 git remote add origin https://github.com/ Vickyoyayalo/Remote-Assignments.git 添加遠端儲存庫，並輸入 git branch -M main 設置主分支。最後使用 git push -u origin main 將文件推送到GitHub遠端儲存庫。
 >Part 2: Basic 
 1.    Please explain the difference between let and var.
     
-        都是宣告變數的關鍵字。var 是表示變數可能會改變，let 則是不會改變。
-        以下是我在網路上找到的舉例哈
-        Var表示值可以改變
-        var appearance: String這裡使用var宣告代表此變數的值(appearance)可能會變動（就像男大十八變一樣，帥氣程度也會改變）
-        let表示值一旦設置就不能改變。
-        let gender: String用 let 宣告表示性別（gender）不會改變
-        資料來源：https://reurl.cc/dnjyM8
+            都是宣告變數的關鍵字。var 是表示變數可能會改變，let 則是不會改變。
+            以下是我在網路上找到的舉例哈
+            Var表示值可以改變
+            var appearance: String這裡使用var宣告代表此變數的值(appearance)可能會變動（就像男大十八變一樣，帥氣程度也會改變）
+            let表示值一旦設置就不能改變。
+            let gender: String用 let 宣告表示性別（gender）不會改變
+            資料來源：https://reurl.cc/dnjyM8
 2.    In Swift, we usually define a variable through the syntax as below: 
 .var x: Int = 10.
 We use the formula: 2 * radius * pi to calculate the circumference. Now, please define a variable pi and assign a value to it. You can refer to the syntax above while thinking about using var or let and which data type it should be. 
     
-    我認為應該要使用let 因為若pi是圓周率，是不能改變的，使用let
-    let pi: Double = 3.14159
+        我認為應該要使用let 因為若pi是圓周率，是不能改變的，使用let
+        let pi: Double = 3.14159
     
 3.  Declare two constants x and y of type Int then assign any value to them. After that, please calculate the average of x and y and store the result in a constant named average.
     
-    首先先宣告x和y兩變數，再去指定其資料類型
-    let x: Int = 10
-    let y: Int = 20
-    let average: Double = Double(x + y) / 2.0
-    然後跟一般數學加減乘除一樣
+        首先先宣告x和y兩變數，再去指定其資料類型
+        let x: Int = 10
+        let y: Int = 20
+        let average: Double = Double(x + y) / 2.0
+        然後跟一般數學加減乘除一樣
 4.    Following Q3, now we want to save the average in a record system, but the system doesn’t accept 65 but 65.0. 
 ● Please solve this problem so that we can put the average in the record system. 
 ● Please explain the difference between ( 10 / 3 ) and ( 10.0 / 3.0 ). 
    
-    (10 / 3) 是整數除法，結果為整數。
-    (10.0 / 3.0) 是浮點數除法，結果為小數。
+        (10 / 3) 是整數除法，結果為整數。
+        (10.0 / 3.0) 是浮點數除法，結果為小數。
 5.    Declare two constants that values are 10 and 3 each, then please calculate the remainder and save the result in a constant named remainder. 
     
-    let remainder = 10 % 3
+        let remainder = 10 % 3
 6.    Swift is a very powerful language that can infer the data type for you ( Type Inference ) while we still need to know the basics well. Please change the following codes into the ones with the type annotation. 
-    
     Ex: .var x = 10.=>.var x: Int = 10. 
-        var flag: Bool = true  //Bool 布林值
-        var inputString: String = "Hello world." //字串
-        let bitsInByte: Int = 8 //整數
-        let averageScore: Double = 86.8
-        //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
-7.    What is Type Inference(類型推斷) in Swift? 類型推斷是Swift編譯器自動推斷變數、常數或表達式的類型的能力。這使得我們在編寫程式碼時不必明確聲明所有類型，從而簡化了程式碼。
+            
+            var flag: Bool = true  //Bool 布林值
+            var inputString: String = "Hello world." //字串
+            let bitsInByte: Int = 8 //整數
+            let averageScore: Double = 86.8
+            //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
+7.    What is Type Inference(類型推斷) in Swift? 
+
+        類型推斷是Swift編譯器自動推斷變數、常數或表達式的類型的能力。這使得我們在編寫程式碼時不必明確聲明所有類型，從而簡化了程式碼。
 8.    What is the issue about this piece of code? 
     
     var 已經在先前賦予phoneNumber 一個值（Int），就不行在後面又同時賦予字串（String）
