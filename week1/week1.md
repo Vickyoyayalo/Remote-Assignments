@@ -170,21 +170,21 @@ Please use For-In loop and Range to print the last three members in the
         }
 3. Please use a while loop to solve the Q2.
 
-    var index = 0
-    while index < lottoNumbers.count {
-        print(lottoNumbers[index])
-        index += 1
-    }
-    //當while後面的條件成立（true）時會不斷重複，所以要在後面寫個if如果是不成立時（false）
+        var index = 0
+        while index < lottoNumbers.count {
+            print(lottoNumbers[index])
+            index += 1
+        }
+        //當while後面的條件成立（true）時會不斷重複，所以要在後面寫個if如果是不成立時（false）
 
 4. Please use a repeat-while loop to solve Q2.
    
-    var index = 0
-    repeat {
-        print(lottoNumbers[index])
-        index += 1
-    } while index < lottoNumbers.count
-    //repeat為先進行，後檢查，適合用於無論如何都需要先進行的情況
+        var index = 0
+        repeat {
+            print(lottoNumbers[index])
+            index += 1
+        } while index < lottoNumbers.count
+        //repeat為先進行，後檢查，適合用於無論如何都需要先進行的情況
 
 5. What are the differences between while and repeat-while?
  - 當while後面的條件成立（true）時會不斷重複，所以要在後面寫個if如果是不成立時（false）
