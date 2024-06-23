@@ -65,7 +65,7 @@ salary += 28000
 10.    You should notice that ‘=’ has a different meaning in programming. In the real world, ‘=’ means equal while in programming, ‘=’ means assign. You simply put the right-hand side data into the left-hand side variable or constant. Now please write down the Equality operator in Swift. 
 let equalityOperator = ( a == b )  // == 雙等號 等於 Equality operator
 
->Part 3: Collection 
+>Part 3: Collection
 You should know how to declare an Array in Swift, and also how to add, remove, insert, read an object in an array. You should be familiar with the following syntax: append, .insert, remove . 
 Arrays are dangerous in Swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully. 
 Arrays are dangerous in Swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully. 
