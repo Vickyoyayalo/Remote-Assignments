@@ -40,11 +40,11 @@ We use the formula: 2 * radius * pi to calculate the circumference. Now, please 
     
 3.  Declare two constants x and y of type Int then assign any value to them. After that, please calculate the average of x and y and store the result in a constant named average.
     
-        首先先宣告x和y兩變數，再去指定其資料類型
-        let x: Int = 10
-        let y: Int = 20
-        let average: Double = Double(x + y) / 2.0
-        然後跟一般數學加減乘除一樣
+    首先先宣告x和y兩變數，再去指定其資料類型
+    let x: Int = 10
+    let y: Int = 20
+    let average: Double = Double(x + y) / 2.0
+    然後跟一般數學加減乘除一樣
 4.    Following Q3, now we want to save the average in a record system, but the system doesn’t accept 65 but 65.0. 
 ● Please solve this problem so that we can put the average in the record system. 
 ● Please explain the difference between ( 10 / 3 ) and ( 10.0 / 3.0 ). 
@@ -54,15 +54,17 @@ We use the formula: 2 * radius * pi to calculate the circumference. Now, please 
     
 5.    Declare two constants that values are 10 and 3 each, then please calculate the remainder and save the result in a constant named remainder. 
     
-        let remainder = 10 % 3
+    let remainder = 10 % 3
+    
 6.    Swift is a very powerful language that can infer the data type for you ( Type Inference ) while we still need to know the basics well. Please change the following codes into the ones with the type annotation. 
     Ex: .var x = 10.=>.var x: Int = 10. 
             
-            var flag: Bool = true  //Bool 布林值
-            var inputString: String = "Hello world." //字串
-            let bitsInByte: Int = 8 //整數
-            let averageScore: Double = 86.8
-            //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
+    var flag: Bool = true  //Bool 布林值
+    var inputString: String = "Hello world." //字串
+    let bitsInByte: Int = 8 //整數
+    let averageScore: Double = 86.8
+    //雙精度浮點數類型，儲存更大的小數點，Apple公司也說他們預設Double為主
+    
 7.    What is Type Inference(類型推斷) in Swift? 
 
         類型推斷是Swift編譯器自動推斷變數、常數或表達式的類型的能力。這使得我們在編寫程式碼時不必明確聲明所有類型，從而簡化了程式碼。
@@ -155,24 +157,24 @@ let lottoNumbers = [10, 9, 8, 7, 6, 5]
 Please use For-In loop and Range to print the last three members in the
 .lottoNumbers. array.
     
-        let lottoNumbers = [10, 9, 8, 7, 6, 5]
-        for number in lottoNumbers[lottoNumbers.count-3..<lottoNumbers.count] {
-            print(number)
-        }
+let lottoNumbers = [10, 9, 8, 7, 6, 5]
+for number in lottoNumbers[lottoNumbers.count-3..<lottoNumbers.count] {
+    print(number)
+}
 
 2. Please use a for-in loop to print the results as the images listed below respectively(through .lottoNumbers.):
 
-        //檢查有沒有明確範圍，沒有寫break他就會重複執行直到條件不成立
-        let sortedNumbers = lottoNumbers.sorted()
-        for number in sortedNumbers {
-            print(number)
-        }
+//檢查有沒有明確範圍，沒有寫break他就會重複執行直到條件不成立
+let sortedNumbers = lottoNumbers.sorted()
+for number in sortedNumbers {
+    print(number)
+}
         
-        for number in lottoNumbers {
-        if number % 2 == 0{
-            print(number)
-            }
-        }
+for number in lottoNumbers {
+if number % 2 == 0{
+    print(number)
+    }
+}
 3. Please use a while loop to solve the Q2.
 
         var index = 0
