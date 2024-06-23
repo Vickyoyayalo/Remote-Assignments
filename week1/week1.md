@@ -74,11 +74,14 @@ Arrays are dangerous in Swift. If you access the array with an index which is ou
     var myFriends= [String]( )
 // Array 一連串的同類型<Element>資料，在array裡面的index都會是正整數
 2.    According to Q1, now I have three friends, ‘Ian’, ‘Bomi’, and ‘Kevin’. Please help me to add their name into myFriends array at once. 
+
     var myFriends= [String]( )
     myFriends.append(contentsOf: ["Ian", "Bomi", "Kevin"])  
     // .append（Element） 增補，沒特定位置；.insert（Element, at: Int）插入在特定的位置
-3.    Oops, I forgot to add ‘Michael’ who is one of my best friends222, please help me to add Michael to the end of myFriends array. 
-myFriends.append("Michael")
+    
+3.    Oops, I forgot to add ‘Michael’ who is one of my best friends, please help me to add Michael to the end of myFriends array. 
+
+    myFriends.append("Michael")
 4.    Because I usually hang out with Kevin, please move Kevin to the beginning of the myFriends array. 
 
     if let index = myFriends.firstIndex(of: "Kevin") {
@@ -101,8 +104,10 @@ myFriends.append("Michael")
 8.    How to get the last element in an array? 
     let lastFriend = myFriends.last
 9.    Please initialize a with keys of type String, value of type Int, and assign it to a variable named. 
+    
     var myCountryNumber = [String:Int]()
     var myCountryNumber: [String: Int] = [:]
+    
 10.    Please add three values 1, 44, 81 to myCountryNumber for keys ‘US’, ‘GB’, ‘JP’ respectively. 
     myCountryNumber["US"] = 1
     myCountryNumber["GB"] = 44
