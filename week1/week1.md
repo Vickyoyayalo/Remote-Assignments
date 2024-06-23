@@ -73,7 +73,7 @@ Arrays are dangerous in Swift. If you access the array with an index which is ou
     var myFriends: [String] = [ ]   
     var myFriends = Array<String>( )
     var myFriends= [String]( )
-// Array 一連串的同類型<Element>資料，在array裡面的index都會是正整數
+    // Array 一連串的同類型<Element>資料，在array裡面的index都會是正整數
 2.    According to Q1, now I have three friends, ‘Ian’, ‘Bomi’, and ‘Kevin’. Please help me to add their name into myFriends array at once. 
 
     var myFriends= [String]( )
@@ -131,4 +131,52 @@ Arrays are dangerous in Swift. If you access the array with an index which is ou
 13.    How to remove a key-value pair in a dictionary? 
    
     myCountryNumber.removeValue(forKey: "US")
+
+>Part 4: Control Flow
+1. Here is an array:
+let lottoNumbers = [10, 9, 8, 7, 6, 5]
+Please use For-In loop and Range to print the last three members in the
+.lottoNumbers. array.
+    
+    let lottoNumbers = [10, 9, 8, 7, 6, 5]
+    for number in lottoNumbers[lottoNumbers.count-3..<lottoNumbers.count] {
+        print(number)
+    }
+
+2. Please use a for-in loop to print the results as the images listed below respectively(through .lottoNumbers.):
+    
+    for number in lottoNumbers {
+        print(number)
+    }
+3. Please use a while loop to solve the Q2.
+
+
+4. Please use a repeat-while loop to solve Q2.
+
+
+5. What are the differences between while and repeat-while?
+
+
+6. Declare a variable isRaining to record the weather. Please write a statement that if the weather is raining, print “It’s raining, I don’t want to work today.”, otherwise print “Although it’s sunny, I still don’t want to work today.”
+
+
+7. In a company, we might use numbers to represent job levels. Let’s make an example. We use 1 for the Member, 2 for Team Leader, 3 for Manager, and 4 for Director. Now, declare a variable named jobLevel and assign a number to it. If the jobLevel number is in our list, print the relative job title name; if not, just print “We don't have this job”. Please use the if-else statement and the switch statement to complete this requirement separately.
+
+
+>Part 5: Function
+1. What are the return types in the following statements?
+func birthday( ) -> String {
+}
+func payment( ) -> Double { }
+
+
+2. Please declare a function named multiply with two arguments a and b . This function won’t return any value and will only print out the result of a * b . Be noticed that we want to give the argument b a default value of 10.
+
+
+3. What’s the difference between argument label and parameter name in a function?
+
+
+4. Please declare a function named greeting with person as an argument label and name as a parameter name. This greeting function will return a String. For example, if you call the function greet like this:It will return the string: “Hello, Luke”.
+greet(person: "Luke")
+ It will return the string: “Hello, Luke”.
 
