@@ -186,6 +186,16 @@ Please use For-In loop and Range to print the last three members in the
         }
 
         //當while後面的條件成立（true）時會不斷重複，所以要在後面寫個if如果是不成立時（false）
+        
+        var index = 0
+        while index < lottoNumbers.count {
+            let number = lottoNumbers[index]
+            if number % 2 == 0 && number <= 10 && number >= 6 {
+                print(number)
+            }
+            index += 1
+        }
+        //.count 
 
 4. Please use a repeat-while loop to solve Q2.
    
@@ -196,6 +206,17 @@ Please use For-In loop and Range to print the last three members in the
             index += 1
         } while index < sortedNumbers.count
         //repeat為先進行，後檢查，適合用於無論如何都需要先進行的情況
+        
+        //整除2
+        var index = 0
+        repeat {
+            let number = lottoNumbers[index]
+            if number % 2 == 0 && number <= 10 && number >= 6 {
+                print(number)
+            }
+            index += 1
+        } while index < lottoNumbers.count
+
 
 5. What are the differences between while and repeat-while?
  - 當while後面的條件成立（true）時會不斷重複，所以要在後面寫個if如果是不成立時（false）
