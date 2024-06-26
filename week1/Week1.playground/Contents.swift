@@ -35,7 +35,7 @@
 
 //myCountryNumber.removeValue(forKey: "US")
 //
-//let lottoNumbers = [10, 9, 8, 7, 6, 5]
+let lottoNumbers = [10, 9, 8, 7, 6, 5]
 //
 // for-in loop:
 //for number in lottoNumbers[lottoNumbers.count-3..<lottoNumbers.count] {
@@ -62,6 +62,13 @@
 //    print(lottoNumbers[index])
 //    index += 1
 //}
+//
+var index = 0
+let sortedNumbers = lottoNumbers.sorted()
+while index < sortedNumbers.count {
+    print(sortedNumbers[index])
+    index += 1
+}
 
 //repeat-while loop
 //var index = 0
@@ -70,6 +77,15 @@
 //    index += 1
 //} while index < lottoNumbers.count
 //
+
+let sortedNumbers = lottoNumbers.sorted()
+
+var index = 0
+repeat {
+    print(sortedNumbers[index])
+    index += 1
+} while index < sortedNumbers.count
+
 //var isRaining = false
 //if isRaining {
 //    print("It's raining, I don't want to work today.")
@@ -110,3 +126,13 @@
 //func greeting(person name: String) -> String {
 //    return "Hello, \(name)"
 //}
+
+//var index = 0
+//while index < lottoNumbers.count {
+//    print(lottoNumbers[index])
+//    index += 1
+//}
+//
+
+
+
