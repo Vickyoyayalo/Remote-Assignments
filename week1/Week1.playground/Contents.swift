@@ -57,6 +57,7 @@ let lottoNumbers = [10, 9, 8, 7, 6, 5]
 //}
 //
 // while loop
+
 // no sorting
 //var index = 0
 //while index < lottoNumbers.count {
@@ -64,7 +65,10 @@ let lottoNumbers = [10, 9, 8, 7, 6, 5]
 //    index += 1
 //}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f42a2981f2fcc53d597c51a8acb8763c3c33f2e0
 // have sorting
 //let sortedNumbers = lottoNumbers.sorted()
 //var index = 0
@@ -73,14 +77,14 @@ let lottoNumbers = [10, 9, 8, 7, 6, 5]
 //    index += 1
 //}
 
-var index = 0
-while index < lottoNumbers.count {
-    let number = lottoNumbers[index]
-    if number % 2 == 0 && number <= 10 && number >= 6 {
-        print(number)
-    }
-    index += 1
-}
+//var index = 0
+//while index < lottoNumbers.count {
+//    let number = lottoNumbers[index]
+//    if number % 2 == 0 && number <= 10 && number >= 6 {
+//        print(number)
+//    }
+//    index += 1
+//}
 
 //repeat-while loop
 
@@ -103,14 +107,14 @@ while index < lottoNumbers.count {
 
 
 
-var index = 0
-repeat {
-    let number = lottoNumbers[index]
-    if number % 2 == 0 && number <= 10 && number >= 6 {
-        print(number)
-    }
-    index += 1
-} while index < lottoNumbers.count
+//var index = 0
+//repeat {
+//    let number = lottoNumbers[index]
+//    if number % 2 == 0 && number <= 10 && number >= 6 {
+//        print(number)
+//    }
+//    index += 1
+//} while index < lottoNumbers.count
 
 //var isRaining = false
 //if isRaining {
