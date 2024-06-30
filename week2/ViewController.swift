@@ -37,11 +37,11 @@ class ViewController: UIViewController {
         changeContent()
     }
     func changeContent() {
-           // 隨機選擇一個文本和顏色
+           // 隨機選擇text顏色
            let randomText = text.randomElement()!
            let randomColor = colors.randomElement()!
            
-           // 更新標籤文本和背景顏色
+           // label的文字背景顏色
            middleLabel.text = randomText
            view.backgroundColor = randomColor
        }
