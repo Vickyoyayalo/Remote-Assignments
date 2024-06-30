@@ -152,6 +152,7 @@ zoo.weeklyHot.eat()
 //
 //let gasolineType = Gasoline.diesel
 //print("The price of \(gasolineType.rawValue) is \(gasolineType.getPrice())")
+// test
 
 // MARK: -associated value
 
